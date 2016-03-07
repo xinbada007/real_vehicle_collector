@@ -1,0 +1,9 @@
+﻿Build started 3/5/2016 8:46:11 AM.
+     1>Project "Z:\Projects\RealCarTest\PCANBasicExample.vcxproj" on node 2 (Build target(s)).
+     1>Link:
+         PCANBasicExample.vcxproj -> Z:\Projects\RealCarTest\x64\Release\PCANBasicExample.exe
+     1>Done Building Project "Z:\Projects\RealCarTest\PCANBasicExample.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:00.65
