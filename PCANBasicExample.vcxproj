@@ -216,7 +216,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="enumser.cpp" />
     <ClCompile Include="PCANBasicClass.cpp" />
     <ClCompile Include="PCANBasicExample.cpp" />
     <ClCompile Include="PCANBasicExampleDlg.cpp" />
@@ -231,9 +230,6 @@
     <ClInclude Include="AutoHandle.h" />
     <ClInclude Include="AutoHeapAlloc.h" />
     <ClInclude Include="AutoHModule.h" />
-    <ClInclude Include="enumser.h" />
-    <ClInclude Include="FTChipID.h" />
-    <ClInclude Include="FTD2XX.H" />
     <ClInclude Include="PCANBasic.h" />
     <ClInclude Include="PCANBasicClass.h" />
     <ClInclude Include="PCANBasicExample.h" />

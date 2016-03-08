@@ -6,7 +6,6 @@
 #include "stdafx.h"
 #include "PCANBasicExample.h"
 #include "PCANBasicExampleDlg.h"
-#include "enumser.h"
 
 #include <sstream>
 #include <iomanip>
@@ -15,8 +14,8 @@
 #include <boost/filesystem/path.hpp>
 #include <mmsystem.h>
 
-#include "ftd2xx.h"
-#include "FTChipID.h"
+#include <ftd2xx.h>
+#include <FTChipID.h>
 
 #ifdef _DEBUG
 #define new DEBUG_NEW

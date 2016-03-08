@@ -1,27 +1,25 @@
-﻿Build started 3/5/2016 8:45:03 AM.
+﻿Build started 3/8/2016 11:11:57 PM.
      1>Project "Z:\Projects\RealCarTest\PCANBasicExample.vcxproj" on node 2 (Rebuild target(s)).
      1>ClCompile:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp"x64\Debug\PCANBasicExample.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt stdafx.cpp
          stdafx.cpp
      1>C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include\afx.h(38): warning C4996: 'MBCS_Support_Deprecated_In_MFC': MBCS support in MFC is deprecated and may be removed in a future version of MFC.
                  C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\atlmfc\include\afx.h(33) : see declaration of 'MBCS_Support_Deprecated_In_MFC'
-         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\PCANBasicExample.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt enumser.cpp PCANBasicClass.cpp PCANBasicExample.cpp PCANBasicExampleDlg.cpp
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\CL.exe /c /Zi /nologo /W3 /WX- /Od /D WIN32 /D _WINDOWS /D _DEBUG /D _MBCS /D _AFXDLL /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp"x64\Debug\PCANBasicExample.pch" /Fo"x64\Debug\\" /Fd"x64\Debug\vc120.pdb" /Gd /TP /errorReport:prompt PCANBasicClass.cpp PCANBasicExample.cpp PCANBasicExampleDlg.cpp
          PCANBasicExampleDlg.cpp
      1>Z:\Dev\FTDI\x64\include\ftd2xx.h : warning C4819: The file contains a character that cannot be represented in the current code page (936). Save the file in Unicode format to prevent data loss
-     1>PCANBasicExampleDlg.cpp(715): warning C4244: '=' : conversion from '__int64' to 'long double', possible loss of data
-     1>PCANBasicExampleDlg.cpp(2405): warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
-     1>PCANBasicExampleDlg.cpp(2502): warning C4305: 'argument' : truncation from 'int' to 'UCHAR'
-     1>PCANBasicExampleDlg.cpp(2502): warning C4309: 'argument' : truncation of constant value
-     1>PCANBasicExampleDlg.cpp(3773): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>PCANBasicExampleDlg.cpp(714): warning C4244: '=' : conversion from '__int64' to 'long double', possible loss of data
+     1>PCANBasicExampleDlg.cpp(2404): warning C4267: '=' : conversion from 'size_t' to 'unsigned int', possible loss of data
+     1>PCANBasicExampleDlg.cpp(2501): warning C4305: 'argument' : truncation from 'int' to 'UCHAR'
+     1>PCANBasicExampleDlg.cpp(2501): warning C4309: 'argument' : truncation of constant value
+     1>PCANBasicExampleDlg.cpp(3772): warning C4267: 'initializing' : conversion from 'size_t' to 'unsigned int', possible loss of data
          PCANBasicExample.cpp
          PCANBasicClass.cpp
-         enumser.cpp
          Generating Code...
        ResourceCompile:
          C:\Program Files (x86)\Windows Kits\8.1\bin\x86\rc.exe /D _DEBUG /D _AFXDLL /l"0x0409" /Ix64\Debug\ /nologo /fo"x64\Debug\PCANBasicExample.res" PCANBasicExample.rc 
        Link:
          C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\x86_amd64\link.exe /ERRORREPORT:PROMPT /OUT:"Z:\Projects\RealCarTest\x64\Debug\PCANBasicExample.exe" /INCREMENTAL /NOLOGO odbc32.lib odbccp32.lib FTChipID.lib ftd2xx.lib winmm.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /manifestinput:"C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\Include\Manifest\dpiaware.manifest" /DEBUG /PDB:"Z:\Projects\RealCarTest\x64\Debug\PCANBasicExample.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"Z:\Projects\RealCarTest\x64\Debug\PCANBasicExample.lib" /MACHINE:X64 x64\Debug\PCANBasicExample.res
-         x64\Debug\enumser.obj
          x64\Debug\PCANBasicClass.obj
          x64\Debug\PCANBasicExample.obj
          x64\Debug\PCANBasicExampleDlg.obj
@@ -31,4 +29,4 @@
 
 Build succeeded.
 
-Time Elapsed 00:00:56.03
+Time Elapsed 00:00:47.48
