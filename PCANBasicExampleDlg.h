@@ -427,8 +427,8 @@ private:
 	//WILL be read & written by different threads, so be extremely careful, have to be
 	//locked each time of using
 	//
-	std::vector<std::pair<const CString, const CString>> m_GPS_Msg_List;
-	std::vector<const CString> m_Xbow_Msg_List;
+	std::vector<std::pair<CString, CString>> m_GPS_Msg_List;
+	std::vector<CString> m_Xbow_Msg_List;
 	CString m_Xbow_Msg_Latest;
 	std::string m_Xbow_Msg_TobeSent;
 	unsigned m_Xbow_Msg_Sent_Num;

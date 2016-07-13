@@ -2389,7 +2389,7 @@ void CPCANBasicExampleDlg::NetworkAccpetorHandler(boost::asio::ip::tcp::socket *
 
 	//boost::asio::deadline_timer writeTimer(socket->get_io_service());
 	boost::system::error_code ercode;
-	unsigned bytetransferred = 0;
+	size_t bytetransferred = 0;
 	while (!m_Send_Terminated)
 	{
 
@@ -2661,7 +2661,7 @@ DWORD WINAPI CPCANBasicExampleDlg::XbowDataReadThreadFunc(LPVOID lpParam)
 
 	if (m_erate > 0)
 	{
-		char erate[] = { 0x54, m_erate};
+		char erate[] = { 0x54, (char)m_erate};
 		ftStatus = FT_Write(ftHandle, erate, sizeof(erate), &BytesWritten);
 		if (ftStatus == FT_OK)
 			if (BytesWritten == sizeof(erate))
@@ -3040,8 +3040,8 @@ void CPCANBasicExampleDlg::StoreAccMsgList()
 
 	clsCritical locker(m_objpCS);
 
-	std::vector<const CString>::const_iterator msgI = m_Xbow_Msg_List.cbegin();
-	std::vector<const CString>::const_iterator msgEND = m_Xbow_Msg_List.cend();
+	std::vector<CString>::const_iterator msgI = m_Xbow_Msg_List.cbegin();
+	std::vector<CString>::const_iterator msgEND = m_Xbow_Msg_List.cend();
 	const unsigned ID_NUM = 0x306;
 
 	std::vector<__int64>::const_iterator timeI = m_Xbow_CPU_Time.cbegin();
@@ -3076,8 +3076,8 @@ void CPCANBasicExampleDlg::StoreMsgList()
 
 	int iCurrentItem_GPS;
 
-	std::vector<std::pair<const CString, const CString>>::const_iterator msg_i = m_GPS_Msg_List.cbegin();
-	std::vector<std::pair<const CString, const CString>>::const_iterator msg_END = m_GPS_Msg_List.cend();
+	std::vector<std::pair<CString, CString>>::const_iterator msg_i = m_GPS_Msg_List.cbegin();
+	std::vector<std::pair<CString, CString>>::const_iterator msg_END = m_GPS_Msg_List.cend();
 	std::vector<uint64_t>::const_iterator timeI = m_GPS_CPU_Time.cbegin();
 	std::vector<uint64_t>::const_iterator timeEnd = m_GPS_CPU_Time.cend();
 
@@ -3769,7 +3769,7 @@ CString CPCANBasicExampleDlg::UnsignedToBinString(const std::bitset<8> &bitw)
 {
 	CString binw("");
 
-	unsigned counts = bitw.size();
+	size_t counts = bitw.size();
 	unsigned num = 0;
 	for (int i = counts - 1; i >= 0 ; i--)
 	{
