@@ -3771,7 +3771,7 @@ CString CPCANBasicExampleDlg::UnsignedToBinString(const std::bitset<8> &bitw)
 
 	size_t counts = bitw.size();
 	unsigned num = 0;
-	for (int i = counts - 1; i >= 0 ; i--)
+	for (size_t i = counts - 1; i >= 0 ; i--)
 	{
 		bitw.test(i) == false ? binw += '0' : binw += '1';
 		++num;
